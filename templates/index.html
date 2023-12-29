@@ -1,0 +1,12 @@
+{% extends "layout.html" %}
+{% block content %}
+<h1>Hello Index</h1>
+<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. In itaque deleniti veritatis vitae ut ad molestias numquam. Impedit, sapiente itaque. Sequi odit illum quis, facere ipsam molestiae est perspiciatis incidunt!</p>
+<li><a href="/">Home</a></li>
+<li><a href="/about">About</a></li>
+<li><a href="/admin">Admin</a></li>
+<h1>{{ data.name }}</h1>
+<h1>{{ data.age }}</h1>
+<h1>{{ data.salary }}</h1>
+<a href="{{url_for('static',filename='M2.jpg')}}">apple cpu images</a>
+{% endblock %}
